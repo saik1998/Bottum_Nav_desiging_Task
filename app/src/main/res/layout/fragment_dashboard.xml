@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.dashboard.DashboardFragment" >
+
+
+    <TextView
+        android:id="@+id/text_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="756dp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp">
+
+
+            <ImageView
+                android:id="@+id/back_arrow1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+            <ImageView
+                android:id="@+id/more"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_toStartOf="@+id/search"
+                android:src="@drawable/ic_baseline_search_24" />
+
+            <ImageView
+                android:id="@+id/search"
+                android:layout_width="53dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_baseline_view_headline_24" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/time"
+            android:layout_marginStart="10dp"
+            android:textSize="32sp"
+            android:textStyle="normal" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linear_design"
+            android:backgroundTint="#7EC2F8"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextView_Title"
+                android:layout_alignParentStart="true"
+                android:text="@string/from"
+                android:textColor="@color/white" />
+
+            <TextView
+                style="@style/TextView_Title_bold"
+                android:layout_alignParentEnd="true"
+                android:text="@string/los"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/linear_design"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextView_Title"
+                android:text="@string/to" />
+
+            <TextView
+                style="@style/TextView_Title_bold"
+                android:layout_alignParentEnd="true"
+                android:text="@string/lon"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/fly"
+                android:layout_marginStart="20dp"
+                android:textColor="#3F51B5"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="41dp"
+                android:layout_height="27dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/img_4" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Year_Month"
+                    android:text="@string/y1"
+                    >
+
+                </TextView>
+
+                <TextView
+                    style="@style/Year_Month"
+                    android:text="@string/june">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Year_Month_light"
+                    android:text="@string/y1">
+
+                </TextView>
+
+                <TextView
+                    style="@style/Year_Month_light"
+
+                    android:text="@string/july"
+                    >
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Year_Month_light"
+
+                    android:text="@string/y1"
+
+                    >
+
+                </TextView>
+
+                <TextView
+                    style="@style/Year_Month_light"
+
+                    android:text="@string/aug"
+                    >
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Year_Month_light"
+
+                    android:text="@string/y1"
+
+                    >
+
+                </TextView>
+
+                <TextView
+                    style="@style/Year_Month_light"
+
+                    android:text="@string/sep"
+                    >
+
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/card_button"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginEnd="45dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Days_TextView"
+                    android:text="@string/mon"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/Days_TextView"
+                    android:layout_weight="1"
+                    android:text="@string/tue"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/Days_TextView"
+                    android:layout_weight="1"
+                    android:text="@string/wed"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/Days_TextView"
+                    android:layout_weight="1"
+                    android:text="@string/thu"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/Days_TextView"
+                    android:layout_weight="1"
+                    android:text="@string/fri"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    style="@style/Days_TextView"
+                    android:layout_weight="1"
+                    android:text="@string/sat"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/Days_TextView"
+                    android:layout_weight="1"
+                    android:text="@string/sun"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:orientation="horizontal">
+
+
+
+
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/AppButton"
+
+                    android:text="@string/one"
+                    android:background="@drawable/cornor_light"
+                    app:cornerRadius="40dp" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/AppButton"
+
+                    android:text="@string/two"
+                    android:background="@drawable/cornor_light"
+                    app:cornerRadius="40dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/AppButton"
+
+                    android:text="@string/three"
+                    android:background="@drawable/cornor_light"
+                    app:cornerRadius="40dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/AppButton"
+
+                    android:text="@string/four"
+                    android:background="@drawable/cornor_light"
+                    app:cornerRadius="40dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/AppButton"
+
+                    android:text="@string/five"
+                    android:background="@drawable/cornor_light"
+                    app:cornerRadius="40dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/AppButton"
+
+                    android:text="@string/six"
+                    android:background="@drawable/cornor_light"
+                    app:cornerRadius="40dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/AppButton"
+
+                    android:text="@string/seven"
+                    android:background="@drawable/cornor_light"
+                    app:cornerRadius="40dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+
+
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/AppButton"
+
+                    android:text="@string/eight"
+                    android:background="@drawable/cornor_light"
+                    app:cornerRadius="40dp" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/AppButton_white"
+
+                    android:text="@string/nine"
+                    android:background="@drawable/corner"
+                    app:cornerRadius="40dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/AppButton"
+
+                    android:text="@string/ten"
+                    android:background="@drawable/cornor_light"
+                    app:cornerRadius="40dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/AppButton"
+
+                    android:text="@string/eleven"
+                    android:background="@drawable/cornor_light"
+                    app:cornerRadius="40dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/AppButton"
+
+                    android:text="@string/twelve"
+                    android:background="@drawable/cornor_light"
+                    app:cornerRadius="40dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/AppButton"
+
+                    android:text="@string/thirteen"
+                    android:background="@drawable/cornor_light"
+                    app:cornerRadius="40dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/AppButton"
+
+                    android:text="@string/fourteen"
+                    android:background="@drawable/cornor_light"
+                    app:cornerRadius="40dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+
+
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/AppButton"
+
+                    android:text="@string/fifteen"
+                    android:background="@drawable/cornor_light"
+                    app:cornerRadius="40dp" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/AppButton"
+
+                    android:text="@string/sixteen"
+                    android:background="@drawable/cornor_light"
+                    app:cornerRadius="40dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/AppButton"
+
+                    android:text="@string/seventeen"
+                    android:background="@drawable/cornor_light"
+                    app:cornerRadius="40dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/AppButton"
+
+                    android:text="@string/eightteen"
+                    android:background="@drawable/cornor_light"
+                    app:cornerRadius="40dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/AppButton"
+
+                    android:text="@string/nineteen"
+                    android:background="@drawable/cornor_light"
+                    app:cornerRadius="40dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/AppButton_white"
+
+                    android:text="@string/twenty"
+                    android:background="@drawable/corner"
+                    app:cornerRadius="40dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/AppButton"
+
+                    android:text="@string/tone"
+                    android:background="@drawable/cornor_light"
+                    app:cornerRadius="40dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+
+
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/AppButton"
+
+                    android:text="@string/t2"
+                    android:background="@drawable/cornor_light"
+                    app:cornerRadius="40dp" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/AppButton"
+
+                    android:text="@string/t3"
+                    android:background="@drawable/cornor_light"
+                    app:cornerRadius="40dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/AppButton"
+
+                    android:text="@string/t4"
+                    android:background="@drawable/cornor_light"
+                    app:cornerRadius="40dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/AppButton"
+
+                    android:text="@string/t5"
+                    android:background="@drawable/cornor_light"
+                    app:cornerRadius="40dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/AppButton_white"
+
+                    android:text="@string/t6"
+                    android:background="@drawable/corner"
+                    app:cornerRadius="40dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/AppButton"
+
+                    android:text="@string/t7"
+                    android:background="@drawable/cornor_light"
+                    app:cornerRadius="40dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/AppButton"
+
+                    android:text="@string/t8"
+                    android:background="@drawable/cornor_light"
+                    app:cornerRadius="40dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/AppButton"
+
+                    android:text="@string/t9"
+                    android:background="@drawable/cornor_light"
+                    app:cornerRadius="40dp" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/AppButton"
+
+                    android:text="@string/th30"
+                    android:background="@drawable/cornor_light"
+                    app:cornerRadius="40dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/AppButton"
+
+                    android:text="@string/th31"
+                    android:background="@drawable/cornor_light"
+                    app:cornerRadius="40dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/AppButton"
+
+                    android:text="@string/one"
+                    android:background="@drawable/cornor_blue"
+                    app:cornerRadius="40dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/AppButton"
+
+                    android:text="@string/two"
+                    android:background="@drawable/cornor_blue"
+                    app:cornerRadius="40dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/AppButton"
+                    android:text="@string/three"
+                    android:background="@drawable/cornor_blue"
+                    app:cornerRadius="40dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+
+                    android:text="@string/four"
+                    android:background="@drawable/cornor_blue"
+                    style="@style/AppButton"
+                    app:cornerRadius="40dp" />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginStart="40dp"
+                android:background="#080" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">Bottum_Nav_desiging_Task</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="ten">10</string>
+    <string name="eleven">11</string>
+    <string name="twelve">12</string>
+    <string name="thirteen">13</string>
+    <string name="fourteen">14</string>
+    <string name="fifteen">15</string>
+    <string name="sixteen">16</string>
+    <string name="seventeen">17</string>
+    <string name="eightteen">18</string>
+    <string name="nineteen">19</string>
+    <string name="twenty">20</string>
+    <string name="tone">21</string>
+    <string name="t2">22</string>
+    <string name="t3">23</string>
+    <string name="t4">24</string>
+    <string name="t5">25</string>
+    <string name="t6">26</string>
+    <string name="t7">27</string>
+    <string name="t8">28</string>
+    <string name="t9">29</string>
+    <string name="th30">30</string>
+    <string name="th31">31</string>
+
+
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="fri">Fri</string>
+    <string name="sat">Sat</string>
+    <string name="sun">Sun</string>
+
+
+    <string name="y1">2020</string>
+    <string name="july">July</string>
+
+    <string name="y2">2020</string>
+    <string name="june">June</string>
+
+    <string name="y3">2020</string>
+    <string name="aug">Aug</string>
+
+    <string name="y4">2020</string>
+    <string name="sep">Sep</string>
+
+    <string name="time">TimeTable</string>
+
+    <string name="los">Los Angeles</string>
+    <string name="lon">London</string>
+    <string name="from">From:</string>
+    <string name="to">To:</string>
+    <string name="fly">Fly out</string>
+
+
+    <string name="hi">Hi,Anand</string>
+    <string name="find">Find cheap Flights</string>
+    <string name="what">What you would like to find</string>
+
+    <string name="cheap">Find cheap Flights</string>
+    <string name="go">LET GO!</string>
+
+    <string name="air">AirPlane</string>
+    <string name="sort">sort by</string>
+    <string name="price">Price</string>
+    <string name="doller">1200$</string>
+
+    <string name="time1">20:40</string>
+    <string name="time2">21:15</string>
+
+    <string name="time3">17:35</string>
+    <string name="time4">18:15</string>
+
+    <string name="month">27 sep</string>
+    <string name="month1">27 sep</string>
+
+    <string name="mon11">20 sep</string>
+    <string name="mon1">20 sep</string>
+
+    <string name="bagg">Baggage</string>
+
+    <string name="direct">Direct flight</string>
+    <string name="time233">0 h 30 m</string>
+
+
+
+
+
+
+
+
+
+</resources>

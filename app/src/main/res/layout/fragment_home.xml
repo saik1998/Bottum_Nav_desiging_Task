@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="347dp"
+            android:background="@drawable/custom_card"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/more"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_toStartOf="@+id/search"
+                    android:src="@drawable/ic_baseline_search_24" />
+
+                <ImageView
+                    android:id="@+id/search"
+                    android:layout_width="53dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/ic_baseline_view_headline_24" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/Title"
+                android:text="@string/hi" />
+
+            <TextView
+                style="@style/TextView_Normal"
+                android:text="@string/find" />
+
+            <TextView
+                style="@style/TextView_Normalwhite"
+                android:text="@string/what" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/ic_baseline_directions_car_filled_24" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+
+                    android:backgroundTint="@color/purple_700"
+                    android:src="@drawable/img_2" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/ic_baseline_local_hotel_24" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/ic_baseline_location_on_24" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    <TextView
+        style="@style/TextView_Normal"
+        android:textColor="#E2E1E4"
+        android:text="@string/cheap" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/linear_design"
+            android:backgroundTint="#7EC2F8"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextView_Title"
+                android:layout_alignParentStart="true"
+                android:text="@string/from"
+                android:textColor="@color/white" />
+
+            <TextView
+                style="@style/TextView_Title_bold"
+                android:layout_alignParentEnd="true"
+                android:text="@string/los"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/linear_design"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextView_Title"
+            android:text="@string/to" />
+
+        <TextView
+            style="@style/TextView_Title_bold"
+            android:layout_alignParentEnd="true"
+            android:text="@string/lon" />
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/appbutton_desiging"
+        android:backgroundTint="#FFEB3B"
+        android:text="@string/go"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:textSize="24sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#080"
+        android:layout_margin="20dp"/>
+
+
+
+
+
+
+</LinearLayout>
+</FrameLayout>
